@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-bengali: 'Noto Sans Bengali', sans-serif;
+  --font-michroma: 'Michroma', sans-serif;
+}
+
+body {
+  background-color: #050505;
+  color: #fafafa;
+}
