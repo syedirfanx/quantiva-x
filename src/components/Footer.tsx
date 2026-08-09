@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
         <div className="flex space-x-6 mb-8">
           <a
-            href="https://instagram.com/quantivax"
+            href="https://www.instagram.com/quantiva.x/"
             target="_blank"
             rel="noreferrer"
             className="text-purple-400/50 hover:text-purple-400 transition-all hover:drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"
