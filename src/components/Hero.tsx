@@ -11,15 +11,6 @@ export default function Hero() {
       <p className="text-sm sm:text-lg md:text-xl font-bengali text-neutral-400 mb-10 sm:mb-12 px-4">
         যুগোপযোগী সিদ্ধান্তে আপনার বিশ্বস্ত সহযোগী
       </p>
-
-      <div className="relative group inline-block">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-        <div className="relative border border-purple-500/30 bg-black/50 px-8 py-3 rounded-full backdrop-blur-sm">
-          <p className="text-sm uppercase tracking-[0.2em] text-blue-200 font-medium drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">
-            Coming Soon
-          </p>
-        </div>
-      </div>
     </section>
   );
 }
