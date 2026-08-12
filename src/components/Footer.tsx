@@ -1,32 +1,40 @@
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="py-12 border-t border-purple-900/20 mt-20 relative z-10">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
-        <div className="flex space-x-6 mb-8">
+    <footer className="py-10 border-t border-neutral-900 mt-10 md:mt-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+        <p className="text-neutral-600 text-xs sm:text-sm tracking-widest font-light order-2 md:order-1">
+          © {new Date().getFullYear()} QuantivaX. All rights reserved.
+        </p>
+        
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 order-1 md:order-2">
           <a
             href="https://www.instagram.com/quantiva.x/"
             target="_blank"
             rel="noreferrer"
-            className="text-purple-400/50 hover:text-purple-400 transition-all hover:drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"
-            aria-label="Instagram"
+            className="flex items-center space-x-2 text-neutral-500 hover:text-white transition-colors text-sm font-light lowercase group"
           >
-            <Instagram size={24} />
+            <Instagram size={15} className="group-hover:scale-110 transition-transform" />
+            <span>quantiva.x</span>
           </a>
           <a
             href="https://facebook.com/quantivax"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400/50 hover:text-blue-400 transition-all hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"
-            aria-label="Facebook"
+            className="flex items-center space-x-2 text-neutral-500 hover:text-white transition-colors text-sm font-light lowercase group"
           >
-            <Facebook size={24} />
+            <Facebook size={15} className="group-hover:scale-110 transition-transform" />
+            <span>quantivax</span>
+          </a>
+          <a 
+            href="mailto:info.quantivax@gmail.com"
+            className="flex items-center space-x-2 text-neutral-500 hover:text-white transition-colors text-sm font-light lowercase group"
+          >
+            <Mail size={15} className="group-hover:scale-110 transition-transform" />
+            <span>info.quantivax@gmail.com</span>
           </a>
         </div>
-        <p className="text-neutral-500 text-sm tracking-wide">
-          © {new Date().getFullYear()} QuantivaX. All rights reserved.
-        </p>
       </div>
     </footer>
   );
