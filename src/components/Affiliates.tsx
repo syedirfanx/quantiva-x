@@ -13,7 +13,7 @@ const affiliates = [
     icon: GraduationCap,
     link: "https://10ms.io/rJg6Cd",
     colorClass: "text-blue-400",
-    hoverBorder: "group-hover:border-blue-500/50",
+    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
     cta: "Registration"
   },
@@ -30,7 +30,7 @@ const affiliates = [
     icon: TrendingUp,
     link: "https://khalidfarhan.com/businessschool?ref=syed-md-irfanul-alam-irfan",
     colorClass: "text-purple-400",
-    hoverBorder: "group-hover:border-purple-500/50",
+    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     cta: "Registration"
   },
@@ -40,7 +40,7 @@ const affiliates = [
     icon: BookOpen,
     link: "https://rkmri.co/mMTERR0E50EA/",
     colorClass: "text-blue-400",
-    hoverBorder: "group-hover:border-blue-500/50",
+    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
     cta: "Shop Now"
   },
@@ -56,7 +56,7 @@ const affiliates = [
     icon: ShoppingCart,
     link: "https://www.startech.com.bd/pigeon-pg352-00-air-fryer?tracking=6a7765668a9d5",
     colorClass: "text-purple-400",
-    hoverBorder: "group-hover:border-purple-500/50",
+    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     cta: "Buy Now"
   }
@@ -80,7 +80,7 @@ export default function Affiliates() {
               href={affiliate.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative bg-neutral-900/40 backdrop-blur-md border border-neutral-800/80 p-6 rounded-2xl transition-all duration-500 overflow-hidden flex flex-col h-full ${affiliate.hoverBorder} ${affiliate.hoverShadow}`}
+              className={`group relative bg-neutral-900/40 backdrop-blur-md p-6 rounded-2xl transition-all duration-500 overflow-hidden flex flex-col h-full ${affiliate.hoverShadow}`}
             >
               {/* Subtle background gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -98,7 +98,7 @@ export default function Affiliates() {
               
               <div className="relative z-10 flex flex-col flex-grow">
                 {/* Icon Container */}
-                <div className="w-12 h-12 rounded-xl bg-black/60 border border-neutral-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <div className="w-12 h-12 rounded-xl bg-black/60 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                   <Icon className={`w-6 h-6 ${affiliate.colorClass}`} />
                 </div>
                 

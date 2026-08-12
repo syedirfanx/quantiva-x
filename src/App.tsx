@@ -1,6 +1,11 @@
-import Hero from './components/Hero';
-import Affiliates from './components/Affiliates';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Categories from './pages/Categories';
+import Blog from './pages/Blog';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -22,9 +27,16 @@ export default function App() {
       <div className="absolute top-0 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-purple-600/10 rounded-full blur-[100px] md:blur-[128px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-blue-600/10 rounded-full blur-[100px] md:blur-[128px] pointer-events-none"></div>
       
+      <Navigation />
+
       <main className="flex-grow relative z-10 flex flex-col justify-center pb-20">
-        <Hero />
-        <Affiliates />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </div>

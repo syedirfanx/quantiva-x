@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail } from 'lucide-react';
+import { Instagram, Facebook, Mail, Users } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -26,6 +26,15 @@ export default function Footer() {
           >
             <Facebook size={15} className="group-hover:scale-110 transition-transform" />
             <span>quantivax</span>
+          </a>
+          <a
+            href="https://www.facebook.com/groups/aicryptospacescience"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center space-x-2 text-neutral-500 hover:text-white transition-colors text-sm font-light lowercase group"
+          >
+            <Users size={15} className="group-hover:scale-110 transition-transform" />
+            <span>community group</span>
           </a>
           <a 
             href="mailto:info.quantivax@gmail.com"
