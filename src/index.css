@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Outfit', sans-serif;
-  --font-bengali: 'Noto Sans Bengali', sans-serif;
+  --font-sans: 'Outfit', 'Anek Bangla', sans-serif;
+  --font-bengali: 'Anek Bangla', sans-serif;
   --font-michroma: 'Michroma', sans-serif;
 }
 

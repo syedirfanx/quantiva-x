@@ -6,10 +6,12 @@ import Resources from './pages/Resources';
 import Blog from './pages/Blog';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#050505] selection:bg-purple-500/30 selection:text-blue-100 flex flex-col relative overflow-x-hidden">
+      <ScrollToTop />
       {/* Large Faded QX Background */}
       <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none select-none z-0">
         <span 

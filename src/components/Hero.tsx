@@ -53,7 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className={`text-sm sm:text-lg font-light tracking-wide text-neutral-300 ${taglineIndex === 1 ? 'font-bengali' : ''}`}
+            className={`text-sm sm:text-lg font-light tracking-wide text-neutral-300`}
           >
             {taglines[taglineIndex]}
           </motion.div>
@@ -79,7 +79,7 @@ export default function Hero() {
 
         <div className="flex-1 space-y-4">
           <div className="w-10 h-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-800"></div>
-          <p className="text-sm sm:text-base font-bengali text-neutral-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-neutral-400 leading-relaxed">
             QuantivaX একটি জ্ঞানভিত্তিক প্ল্যাটফর্ম, যেখানে শিক্ষা, প্রযুক্তি ও তথ্যের মাধ্যমে আপনাকে আরও স্মার্ট সিদ্ধান্ত নিতে সহায়তা করা হয়। জটিল বিষয়গুলো সহজভাবে তুলে ধরে শেখা, বোঝা ও এগিয়ে যাওয়ার জন্য প্রয়োজনীয় তথ্য ও জ্ঞান আমরা আপনার কাছে পৌঁছে দিই।
           </p>
         </div>
