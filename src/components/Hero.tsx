@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
@@ -91,19 +92,19 @@ export default function Hero() {
         transition={{ delay: 0.4 }}
         className="mt-12 flex flex-col sm:flex-row gap-4 relative z-10 w-full sm:w-auto px-4 sm:px-0"
       >
-        <a 
-          href="/categories" 
+        <Link 
+          to="/resources" 
           className="group w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-black font-semibold tracking-wide hover:bg-neutral-200 transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]"
         >
-          Explore Categories
+          Explore Resources
           <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-        </a>
-        <a 
-          href="/contact" 
+        </Link>
+        <Link 
+          to="/contact" 
           className="w-full sm:w-auto px-8 py-4 rounded-xl bg-neutral-900/50 text-white font-medium tracking-wide hover:bg-neutral-800 transition-all flex items-center justify-center"
         >
           Get In Touch
-        </a>
+        </Link>
       </motion.div>
 
     </section>

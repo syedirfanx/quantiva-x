@@ -1,6 +1,17 @@
-import { ExternalLink, Zap, BookOpen, TrendingUp, Globe, ShoppingCart, GraduationCap } from 'lucide-react';
+import { ExternalLink, Zap, BookOpen, TrendingUp, Globe, ShoppingCart, GraduationCap, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const affiliates = [
+  {
+    name: "HSC 27 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
+    description: "কলেজ লাইফের শুরু থেকেই দেশের এক্সপার্ট টিচারদের মাস্টারপ্ল্যানে তোমার A+ প্রস্তুতি শুরু করো অনলাইন ব্যাচে। HSC 27 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি) কোর্সে রেগুলার লাইভ ক্লাস, রেকর্ডেড ক্লাস, মাস্টারবুক, এক্সামসহ সবকিছু দিয়ে তোমার HSC ও Admission প্রস্তুতি হবে ১০০ তে ১০০!",
+    features: ["Promo Code: QNTVX"],
+    icon: GraduationCap,
+    link: "https://10ms.io/jJho8t",
+    colorClass: "text-pink-400",
+    hoverShadow: "group-hover:shadow-[0_0_30px_rgba(236,72,153,0.15)]",
+    cta: "Enroll Now"
+  },
   {
     name: "IELTS LIVE Batch by 10 Minute School",
     features: [
@@ -13,7 +24,6 @@ const affiliates = [
     icon: GraduationCap,
     link: "https://10ms.io/rJg6Cd",
     colorClass: "text-blue-400",
-    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
     cta: "Registration"
   },
@@ -30,7 +40,6 @@ const affiliates = [
     icon: TrendingUp,
     link: "https://khalidfarhan.com/businessschool?ref=syed-md-irfanul-alam-irfan",
     colorClass: "text-purple-400",
-    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     cta: "Registration"
   },
@@ -40,25 +49,8 @@ const affiliates = [
     icon: BookOpen,
     link: "https://rkmri.co/mMTERR0E50EA/",
     colorClass: "text-blue-400",
-    hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
     cta: "Shop Now"
-  },
-  {
-    name: "Pigeon PG352/00 Air Fryer (8L)",
-    features: [
-      "Capacity: 8 liters, Transparent Window",
-      "Rated Power: 2000W, Uses little to no oil",
-      "One-Touch Digital Touch Panel",
-      "Removable non-stick cooking basket",
-      "Price: 9,680৳ (Cash Discount)"
-    ],
-    icon: ShoppingCart,
-    link: "https://www.startech.com.bd/pigeon-pg352-00-air-fryer?tracking=6a7765668a9d5",
-    colorClass: "text-purple-400",
-    hoverBorder: "group-",
-    hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
-    cta: "Buy Now"
   }
 ];
 
@@ -135,6 +127,16 @@ export default function Affiliates() {
             </a>
           );
         })}
+      </div>
+
+      <div className="mt-12 flex justify-center">
+        <Link 
+          to="/resources"
+          className="group px-8 py-4 rounded-xl bg-neutral-900/50 text-white font-medium tracking-wide hover:bg-neutral-800 transition-all flex items-center justify-center gap-3"
+        >
+          See All Resources
+          <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
     </section>
   );

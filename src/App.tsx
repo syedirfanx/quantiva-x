@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Categories from './pages/Categories';
+import Resources from './pages/Resources';
 import Blog from './pages/Blog';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -32,7 +32,7 @@ export default function App() {
       <main className="flex-grow relative z-10 flex flex-col justify-center pb-20">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

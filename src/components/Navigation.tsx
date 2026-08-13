@@ -26,7 +26,7 @@ export default function Navigation() {
 
   const links = [
     { name: 'Home', path: '/' },
-    { name: 'Categories', path: '/categories' },
+    { name: 'Resources', path: '/resources' },
     { name: 'Blog', path: '/blog' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }
