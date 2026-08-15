@@ -72,43 +72,27 @@ const allItems = [
     subcategory: "Business School"
   },
   {
-    name: "Rokomari.com",
-    description: "Rokomari.com is one of the most beloved online shops in Bangladesh, famous for its enormous collection of more than 300,000 books in almost 3,000 categories. But Rokomari is more than just a bookshop.",
-    features: [],
+    name: "মিসির আলি সমগ্র ১ - হুমায়ূন আহমেদ",
+    description: "যাঁরা রহস্য, সাইকোলজি এবং অলৌকিক ঘটনার যৌক্তিক সমাধান পছন্দ করেন, তাঁদের জন্য এটি একটি মাস্টারপিস কালেকশন। মনস্তাত্ত্বিক রহস্যের এক অদ্ভুত মায়াজাল তৈরি করেছেন হুমায়ূন আহমেদ তাঁর কালজয়ী চরিত্র 'মিসির আলি'-র মাধ্যমে।",
+    features: [
+      "মনস্তাত্ত্বিক রহস্য: অতিপ্রাকৃতিক ও অদ্ভুত সব ঘটনার পেছনের মনস্তাত্ত্বিক ও যৌক্তিক বিশ্লেষণ।",
+      "অনবদ্য চরিত্র: যুক্তি আর গভীর পর্যবেক্ষণ ক্ষমতার এক অনন্য প্রতীক প্রফেসর মিসির আলি।",
+      "সেরা সংগ্রহ: মিসির আলির শুরুর দিকের দারুণ সব উপন্যাস এক মলাটে।"
+    ],
     icon: BookOpen,
-    link: "https://rkmri.co/mMTERR0E50EA/",
+    link: "https://rkmri.co/TRM5SEolSA53/",
     colorClass: "text-blue-400",
     hoverBorder: "group-",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
-    cta: "Shop Now",
-    category: "Books",
-    subcategory: "Literature" 
-  },
-  {
-    name: "Pigeon PG352/00 Air Fryer (8L)",
-    description: "",
-    features: [
-      "Capacity: 8 liters, Transparent Window",
-      "Rated Power: 2000W, Uses little to no oil",
-      "One-Touch Digital Touch Panel",
-      "Removable non-stick cooking basket",
-      "Price: 9,680৳ (Cash Discount)"
-    ],
-    icon: ShoppingCart,
-    link: "https://www.startech.com.bd/pigeon-pg352-00-air-fryer?tracking=6a7765668a9d5",
-    colorClass: "text-purple-400",
-    hoverBorder: "group-",
-    hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     cta: "Buy Now",
-    category: "Electronic Products",
-    subcategory: "Air Fryer"
+    category: "Books",
+    subcategory: "Psychological Mystery"
   }
 ];
 
 const subcategoryOptions: Record<string, string[]> = {
   "Courses": ["All", "AI", "Machine Learning", "Python", "English Language", "Business School", "HSC"],
-  "Books": ["All", "Fiction", "Non-Fiction", "Literature", "Educational", "Sci-Fi"],
-  "Electronic Products": ["All", "Mobile", "Laptop", "Air Fryer"]
+  "Books": ["All", "Fiction", "Non-Fiction", "Literature", "Educational", "Sci-Fi", "Psychological Mystery"]
 };
 
 export default function Resources() {
@@ -138,7 +122,7 @@ export default function Resources() {
         Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Resources</span>
       </h1>
       <p className="text-neutral-400 max-w-2xl text-center text-lg md:text-xl font-light mb-12">
-        Find exactly what you need to elevate your journey.
+        Discover useful resources to help you learn, grow, and make smarter decisions.
       </p>
 
       {/* Search and Filters */}
@@ -167,7 +151,6 @@ export default function Resources() {
             <option value="All">All Resources</option>
             <option value="Courses">Courses</option>
             <option value="Books">Books</option>
-            <option value="Electronic Products">Electronic Products</option>
           </select>
           <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-neutral-500">
             <ChevronDown size={18} />

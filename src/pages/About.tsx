@@ -5,7 +5,7 @@ export default function About() {
   const values = [
     {
       title: "Our Mission",
-      description: "To empower individuals and organizations by simplifying complex ideas and providing actionable, knowledge-driven insights.",
+      description: "To make useful knowledge easier to understand and access, helping people learn, explore opportunities, and make more informed decisions.",
       icon: Target,
       gradient: "from-blue-600/5 to-purple-600/5",
       iconColor: "text-blue-400",
@@ -14,7 +14,7 @@ export default function About() {
     },
     {
       title: "Innovation",
-      description: "We constantly explore the intersection of technology and education to deliver modern, effective learning experiences.",
+      description: "We explore the intersection of technology, education, and emerging ideas to discover better ways to learn, understand, and solve problems.",
       icon: Lightbulb,
       gradient: "from-purple-600/5 to-pink-600/5",
       iconColor: "text-purple-400",
@@ -23,7 +23,7 @@ export default function About() {
     },
     {
       title: "Community",
-      description: "Building a supportive ecosystem where learners and experts can connect, share, and grow together.",
+      description: "We aim to build a growing community where curious minds can discover knowledge, exchange ideas, and grow together.",
       icon: Users,
       gradient: "from-pink-600/5 to-orange-600/5",
       iconColor: "text-pink-400",
@@ -32,7 +32,7 @@ export default function About() {
     },
     {
       title: "Integrity",
-      description: "Delivering accurate, unbiased, and transparent information you can trust for your most important decisions.",
+      description: "We value accuracy, transparency, and responsible recommendations. When we recommend products, courses, tools, or other resources, we aim to provide useful information so you can make informed choices.",
       icon: Shield,
       gradient: "from-teal-600/5 to-blue-600/5",
       iconColor: "text-teal-400",
