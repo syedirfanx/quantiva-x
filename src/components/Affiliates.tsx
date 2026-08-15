@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 
 const affiliates = [
   {
+    name: "AI Automation Masterclass with n8n",
+    description: "বর্তমানে AI Agent Building ও n8n Automation সবচেয়ে চাহিদাসম্পন্ন স্কিলগুলোর একটি! n8n দিয়ে নিজের ও ক্লায়েন্টের ৮৫–৯৫% রিপিটেড কাজ অটোমেট করে Freelancing ও Remote Job-এর মাধ্যমে ইনকামের সুযোগ তৈরি করুন।",
+    features: [
+      "AI Agent & Business Automation",
+      "Facebook, YouTube, WordPress & E-commerce Automation",
+      "1000+ Pre-Built Workflow"
+    ],
+    icon: Zap,
+    link: "https://www.msbacademy.com/course/ai-agent-and-automation/ref/2712/",
+    colorClass: "text-purple-400",
+    hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
+    cta: "Enroll Now"
+  },
+  {
     name: "HSC 27 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
     description: "কলেজ লাইফের শুরু থেকেই দেশের এক্সপার্ট টিচারদের মাস্টারপ্ল্যানে তোমার A+ প্রস্তুতি শুরু করো অনলাইন ব্যাচে। HSC 27 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি) কোর্সে রেগুলার লাইভ ক্লাস, রেকর্ডেড ক্লাস, মাস্টারবুক, এক্সামসহ সবকিছু দিয়ে তোমার HSC ও Admission প্রস্তুতি হবে ১০০ তে ১০০!",
     features: ["Promo Code: QNTVX"],
@@ -42,15 +56,6 @@ const affiliates = [
     colorClass: "text-purple-400",
     hoverShadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     cta: "Registration"
-  },
-  {
-    name: "Rokomari.com",
-    description: "Rokomari.com is one of the most beloved online shops in Bangladesh, famous for its enormous collection of more than 300,000 books in almost 3,000 categories. But Rokomari is more than just a bookshop.",
-    icon: BookOpen,
-    link: "https://rkmri.co/mMTERR0E50EA/",
-    colorClass: "text-blue-400",
-    hoverShadow: "group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]",
-    cta: "Shop Now"
   }
 ];
 
