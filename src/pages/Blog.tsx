@@ -13,7 +13,7 @@ export default function Blog() {
 
       <div className="flex flex-col space-y-6 w-full max-w-3xl">
         {posts.map((post, i) => (
-          <Link key={i} to={`/blog/${post.slug}`} className="group relative overflow-hidden rounded-2xl bg-black/40 backdrop-blur-md p-8 transition-colors duration-500 cursor-pointer block">
+          <Link key={i} to={`/blog/${post.slug}`} className="group relative overflow-hidden rounded-2xl bg-neutral-900/40 backdrop-blur-md p-8 transition-colors duration-500 cursor-pointer block">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             {/* QX Watermark */}

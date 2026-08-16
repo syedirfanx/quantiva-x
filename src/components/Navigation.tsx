@@ -50,7 +50,7 @@ export default function Navigation() {
         >
           uantiva
         </motion.span>
-        <span>X</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">X</span>
       </Link>
       
       {/* Desktop Menu */}

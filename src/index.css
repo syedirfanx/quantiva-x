@@ -10,3 +10,9 @@ body {
   background-color: #050505;
   color: #fafafa;
 }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}

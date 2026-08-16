@@ -70,7 +70,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + (i * 0.1) }}
-              className={`group relative overflow-hidden rounded-2xl bg-black/40 backdrop-blur-md p-8 md:p-10 transition-colors duration-500`}
+              className={`group relative overflow-hidden rounded-2xl bg-neutral-900/40 backdrop-blur-md p-8 md:p-10 transition-colors duration-500`}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
               

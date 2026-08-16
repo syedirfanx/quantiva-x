@@ -62,7 +62,7 @@ export default function Contact() {
               href={contact.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative overflow-hidden rounded-2xl bg-black/40 backdrop-blur-md p-10 flex flex-col items-center text-center transition-colors duration-500 h-full`}
+              className={`group relative overflow-hidden rounded-2xl bg-neutral-900/40 backdrop-blur-md p-10 flex flex-col items-center text-center transition-colors duration-500 h-full`}
             >
               {/* Subtle background gradient on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${contact.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
