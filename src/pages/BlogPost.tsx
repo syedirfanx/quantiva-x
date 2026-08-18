@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Share2, Facebook, Linkedin, Link as LinkIcon, Check } from 'lucide-react';
-import { posts } from '../data/posts';
+import { posts } from '../data/blogPosts';
 import { useState } from 'react';
 
 export default function BlogPost() {

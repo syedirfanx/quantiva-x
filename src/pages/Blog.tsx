@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { posts } from '../data/posts';
+import { posts } from '../data/blogPosts';
 
 export default function Blog() {
   return (
