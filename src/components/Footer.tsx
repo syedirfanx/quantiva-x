@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, Users } from 'lucide-react';
+import { Instagram, Facebook, Mail, Users, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Socials & Contact */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4 md:items-end">
             <div className="w-full md:w-auto">
               <h3 className="text-white font-medium mb-4 tracking-wider text-xs uppercase">Connect</h3>
               <ul className="space-y-3 flex flex-col">
@@ -41,15 +41,15 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://facebook.com/quantivax" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors text-sm font-light group">
-                    <span><Facebook size={16} className="group-hover:scale-110 transition-transform" /></span>
-                    <span>quantivax</span>
+                  <a href="https://www.youtube.com/@quantiva.x" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors text-sm font-light group">
+                    <span><Youtube size={16} className="group-hover:scale-110 transition-transform" /></span>
+                    <span>quantiva.x</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/groups/aicryptospacescience" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors text-sm font-light group">
-                    <span><Users size={16} className="group-hover:scale-110 transition-transform" /></span>
-                    <span>community group</span>
+                  <a href="https://facebook.com/quantivax" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors text-sm font-light group">
+                    <span><Facebook size={16} className="group-hover:scale-110 transition-transform" /></span>
+                    <span>quantivax</span>
                   </a>
                 </li>
                 <li>
